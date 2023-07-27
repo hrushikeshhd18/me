@@ -1,0 +1,48 @@
+{
+    "clients": [
+        {
+            "clientName": "Beaconforce",
+            "date": "Sep 2021 - Present",
+            "summary": "Work with Flutter mobile and web. Also doing some backend stuffs.",
+            "logoUrl": "https://photos.wellfound.com/startups/i/8694009-55f407281a74fc708ea7f4ea53835bd4-medium_jpg.jpg?buster=1642739873",
+            "notableTasks": [
+                {
+                    "name": "Mobile Development",
+                    "description": "Used flutter to develop a mobile app."
+                },
+                {
+                    "name": "Web Development",
+                    "description": "Used flutter to develop a web app."
+                },
+                {
+                    "name": "CI/CD",
+                    "description": "Automate builds and releases."
+                },
+                {
+                    "name": "Backend",
+                    "description": "Develop backend using NodeJS with Firebase Functions."
+                }
+            ]
+        },
+        {
+            "clientName": "NV Tech Business Solution",
+            "date": "May 2019 - May 2022",
+            "summary": "Developed a lot of apps using Flutter.",
+            "logoUrl": "https://photos.wellfound.com/startups/i/8694009-55f407281a74fc708ea7f4ea53835bd4-medium_jpg.jpg?buster=1642739873",
+            "notableTasks": [
+                {
+                    "name": "Mobile Development",
+                    "description": "Used flutter to develop mobile apps."
+                },
+                {
+                    "name": "Backend",
+                    "description": "Develop and maintain backend using PHP."
+                },
+                {
+                    "name": "Legacy Projects",
+                    "description": "Maintain and debug old mobile projects written in Java."
+                }
+            ]
+        }
+    ]
+}
