@@ -157,20 +157,20 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                 ),
               ),
               isMobile
-                  ? Positioned(
-                      top: Responsive.maxSquareSize(context) * 4,
-                      child: AnimatedContainer(
-                        duration: Duration(milliseconds: 350),
-                        width: Responsive.maxSquareSize(context) * 2,
-                        height: Responsive.maxSquareSize(context) * 3,
-                        child: RiveAnimation.asset(
-                          "assets/rive/hero_background.riv",
-                          artboard: "LadScape",
-                          stateMachines: ['Motion'],
-                        ),
-                      ),
-                    )
-                  : Container(),
+                  ? Container()
+                  : Positioned(
+                top: Responsive.maxSquareSize(context) * 4,
+                child: AnimatedContainer(
+                  duration: Duration(milliseconds: 350),
+                  width: Responsive.maxSquareSize(context) * 2,
+                  height: Responsive.maxSquareSize(context) * 3,
+                  child: RiveAnimation.asset(
+                    "assets/rive/hero_background.riv",
+                    artboard: "LadScape",
+                    stateMachines: ['Motion'],
+                  ),
+                ),
+              )
             ],
           ),
         );
