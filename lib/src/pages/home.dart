@@ -8,6 +8,8 @@ import 'package:hrushikesh_portfolio/src/pages/routes/experience.dart';
 import 'package:hrushikesh_portfolio/src/pages/routes/portfolio.dart';
 import 'package:hrushikesh_portfolio/src/utils/responsive_util.dart';
 import 'package:hrushikesh_portfolio/theme.dart';
+import 'package:rive/rive.dart';
+import 'package:flutter/foundation.dart' show kIsWeb;
 
 class Home extends StatefulWidget {
   const Home({
@@ -25,6 +27,7 @@ class Home extends StatefulWidget {
 
 class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   late TabController tabController;
+  bool isMobile = false;
 
   int get routeIndex {
     return widget.routeIndex.clamp(0, 3);
@@ -35,9 +38,17 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
   @override
   void didChangeDependencies() {
     super.didChangeDependencies();
-    tabController = TabController(length: 4, vsync: this, initialIndex: routeIndex);
+    checkScreenSize();
+    tabController =
+        TabController(length: 4, vsync: this, initialIndex: routeIndex);
 
     Provider.of<DataController>(context).loadAllData();
+  }
+
+  void checkScreenSize() {
+    setState(() {
+      isMobile = MediaQuery.of(context).size.shortestSide < 400;
+    });
   }
 
   @override
@@ -46,7 +57,8 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
     return StreamBuilder(
       stream: themeController.state,
       builder: (context, snapshot) {
-        final isMediumScreenOrSmaller = Responsive.isMediumScreenOrSmaller(context);
+        final isMediumScreenOrSmaller =
+            Responsive.isMediumScreenOrSmaller(context);
         return Scaffold(
           body: Stack(
             children: [
@@ -64,7 +76,9 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                         children: [
                           Expanded(
                             child: Align(
-                              alignment: isMediumScreenOrSmaller ? Alignment.centerLeft : Alignment.center,
+                              alignment: isMediumScreenOrSmaller
+                                  ? Alignment.centerLeft
+                                  : Alignment.center,
                               child: TabBar(
                                 controller: tabController,
                                 isScrollable: true,
@@ -90,10 +104,12 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                                       Navigator.pushNamed(context, "/about");
                                       break;
                                     case 1:
-                                      Navigator.pushNamed(context, "/portfolio");
+                                      Navigator.pushNamed(
+                                          context, "/portfolio");
                                       break;
                                     case 2:
-                                      Navigator.pushNamed(context, "/experience");
+                                      Navigator.pushNamed(
+                                          context, "/experience");
                                       break;
                                     case 3:
                                       Navigator.pushNamed(context, "/contact");
@@ -133,11 +149,28 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                       themeController.toggleTheme();
                     },
                     icon: Icon(
-                      themeController.isDarkMode ? Icons.dark_mode : Icons.light_mode,
+                      themeController.isDarkMode
+                          ? Icons.dark_mode
+                          : Icons.light_mode,
                     ),
                   ),
                 ),
               ),
+              isMobile
+                  ? Positioned(
+                      top: Responsive.maxSquareSize(context) * 4,
+                      child: AnimatedContainer(
+                        duration: Duration(milliseconds: 350),
+                        width: Responsive.maxSquareSize(context) * 2,
+                        height: Responsive.maxSquareSize(context) * 3,
+                        child: RiveAnimation.asset(
+                          "assets/rive/hero_background.riv",
+                          artboard: "LadScape",
+                          stateMachines: ['Motion'],
+                        ),
+                      ),
+                    )
+                  : Container(),
             ],
           ),
         );
