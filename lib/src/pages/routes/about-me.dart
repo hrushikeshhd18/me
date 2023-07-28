@@ -17,10 +17,10 @@ class AboutMe extends StatelessWidget {
       child: Column(
         children: [
           ProfileCard(),
-          SkillsCard(),
           AboutCard(),
           Experience(),
           Portfolio(),
+          SkillsCard(),
           Contact(),
         ],
       ),
