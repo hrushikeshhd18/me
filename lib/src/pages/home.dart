@@ -71,7 +71,10 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
                     mainAxisAlignment: MainAxisAlignment.start,
                     mainAxisSize: MainAxisSize.max,
                     children: [
-                      Expanded(child: AboutMe()),
+                      Expanded(
+                        child: AboutMe(),
+                      ),
+
                     ],
                   ),
                 ),
@@ -95,15 +98,20 @@ class _HomeState extends State<Home> with SingleTickerProviderStateMixin {
               isMobile
                   ? Container()
                   : Positioned(
-                top: Responsive.maxSquareSize(context) * 4,
-                child: AnimatedContainer(
-                  duration: Duration(milliseconds: 350),
-                  width: Responsive.maxSquareSize(context) * 2,
-                  height: Responsive.maxSquareSize(context) * 3,
-                  child: RiveAnimation.asset(
-                    "assets/rive/hero_background.riv",
-                    artboard: "LadScape",
-                    stateMachines: ['Motion'],
+                child: Align(
+                  alignment: Alignment.bottomLeft,
+                  child: Padding(
+                    padding: const EdgeInsets.only(top: 5.0),
+                    child: AnimatedContainer(
+                      duration: Duration(milliseconds: 350),
+                      width: Responsive.maxSquareSize(context) * 2,
+                      height: Responsive.maxSquareSize(context) * 3,
+                      child: RiveAnimation.asset(
+                        "assets/rive/hero_background.riv",
+                        artboard: "LadScape",
+                        stateMachines: ['Motion'],
+                      ),
+                    ),
                   ),
                 ),
               )
