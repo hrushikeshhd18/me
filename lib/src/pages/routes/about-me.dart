@@ -1,4 +1,7 @@
 import 'package:flutter/material.dart';
+import 'package:hrushikesh_portfolio/src/pages/routes/contact.dart';
+import 'package:hrushikesh_portfolio/src/pages/routes/experience.dart';
+import 'package:hrushikesh_portfolio/src/pages/routes/portfolio.dart';
 import 'package:hrushikesh_portfolio/src/widgets/about_card.dart';
 import 'package:hrushikesh_portfolio/src/widgets/profile_card.dart';
 import 'package:hrushikesh_portfolio/src/widgets/skills_card.dart';
@@ -14,8 +17,11 @@ class AboutMe extends StatelessWidget {
       child: Column(
         children: [
           ProfileCard(),
-          AboutCard(),
           SkillsCard(),
+          AboutCard(),
+          Experience(),
+          Portfolio(),
+          Contact(),
         ],
       ),
     );
