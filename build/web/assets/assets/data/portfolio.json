@@ -1,0 +1,19 @@
+{
+    "projects": [
+
+        {
+            "name": "BTX App",
+            "previewLink": "https://play.google.com/store/apps/details?id=com.wittymanager.mobilebtx",
+            "tags": [
+                "Time & Attendance",
+                "PMS",
+                "Android & iOS"
+            ],
+            "previewImage": "assets/images/portfolio/btx.png",
+            "fullDescription": "Legacy code of 'Witty'. This has same features and UI design but completely different source code. I was maintaining this along with a team until I left the company."
+        }
+
+
+    ]
+}
+
