@@ -32,7 +32,7 @@ jobs:
           cp -avr docs/index.html docs/404.html
 
       - name: Commit & Push changes
-        uses: actions-js/push@master
+        uses: actions-js/push@main
         with:
           branch: "main"
           github_token: ${{ secrets.GITHUB_TOKEN }}
