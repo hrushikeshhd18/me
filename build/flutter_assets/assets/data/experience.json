@@ -2,17 +2,18 @@
     "clients": [
         {
             "clientName": "Upwork",
-            "date": "Sep 2022 - Present",
-            "summary": "Freelancing at peak worked with amazing people ",
+            "date": "March 2020 - Present (3 years 5 months) Remote",
+            "summary": "Mobile Developer",
             "logoUrl": "https://www.google.com/search?q=upwork&client=safari&rls=en&sxsrf=AB5stBgKD613Xq_RgSHPhpGAmE5oeunCYw:1690446795669&tbm=isch&source=iu&ictx=1&vet=1&fir=YB47PD8s_MuZxM%252CD3bdrUDy0YBCqM%252C%252Fm%252F02pzh5d&usg=AI4_-kT_VIzHVR3NiIPE67a2K6u97N14dw&sa=X&ved=2ahUKEwjK05GGva6AAxWZT2wGHTpSDIcQ_B16BAhIEAI#imgrc=YB47PD8s_MuZxM",
+            "location": "Remote",
             "notableTasks": [
                 {
                     "name": "Mobile Development",
-                    "description": "Used flutter to develop a mobile app."
+                    "description": "Used Flutter to develop a mobile app."
                 },
                 {
                     "name": "Web Development",
-                    "description": "Used flutter to develop a web app."
+                    "description": "Used Flutter to develop a web app."
                 },
                 {
                     "name": "CI/CD",
@@ -25,14 +26,54 @@
             ]
         },
         {
-            "clientName": "NV Tech Business Solution",
-            "date": "May 2019 - May 2022",
-            "summary": "Developed a lot of apps using Flutter.",
-            "logoUrl": "https://photos.wellfound.com/startups/i/8694009-55f407281a74fc708ea7f4ea53835bd4-medium_jpg.jpg?buster=1642739873",
+            "clientName": "TheLoosersCompany",
+            "date": "April 2020 - Present (3 years 4 months) Belgaum, Karnataka, India",
+            "summary": "Independent Contractor",
+            "logoUrl": "https://www.google.com/search?q=upwork&client=safari&rls=en&sxsrf=AB5stBgKD613Xq_RgSHPhpGAmE5oeunCYw:1690446795669&tbm=isch&source=iu&ictx=1&vet=1&fir=YB47PD8s_MuZxM%252CD3bdrUDy0YBCqM%252C%252Fm%252F02pzh5d&usg=AI4_-kT_VIzHVR3NiIPE67a2K6u97N14dw&sa=X&ved=2ahUKEwjK05GGva6AAxWZT2wGHTpSDIcQ_B16BAhIEAI#imgrc=YB47PD8s_MuZxM",
+            "location": "Belgaum, Karnataka, India",
+            "notableTasks": [
+                {
+                    "name": "Mobile Application Development",
+                    "description": "Worked as an independent contractor for various mobile app projects."
+                }
+            ]
+        },
+        {
+            "clientName": "Fiverr",
+            "date": "March 2021 - Present (2 years 5 months) Remote",
+            "logoUrl": "https://www.google.com/search?q=upwork&client=safari&rls=en&sxsrf=AB5stBgKD613Xq_RgSHPhpGAmE5oeunCYw:1690446795669&tbm=isch&source=iu&ictx=1&vet=1&fir=YB47PD8s_MuZxM%252CD3bdrUDy0YBCqM%252C%252Fm%252F02pzh5d&usg=AI4_-kT_VIzHVR3NiIPE67a2K6u97N14dw&sa=X&ved=2ahUKEwjK05GGva6AAxWZT2wGHTpSDIcQ_B16BAhIEAI#imgrc=YB47PD8s_MuZxM",
+            "summary": "Mobile Application Developer",
+            "location": "Remote",
+            "notableTasks": [
+                {
+                    "name": "Mobile Application Development",
+                    "description": "Develop mobile applications for various clients on the Fiverr platform."
+                }
+            ]
+        },
+        {
+            "clientName": "Servicecart",
+            "date": "February 2021 - Present (2 years 6 months) Belgaum, Karnataka, India",
+            "summary": "Independent Contractor",
+            "logoUrl": "https://www.google.com/search?q=upwork&client=safari&rls=en&sxsrf=AB5stBgKD613Xq_RgSHPhpGAmE5oeunCYw:1690446795669&tbm=isch&source=iu&ictx=1&vet=1&fir=YB47PD8s_MuZxM%252CD3bdrUDy0YBCqM%252C%252Fm%252F02pzh5d&usg=AI4_-kT_VIzHVR3NiIPE67a2K6u97N14dw&sa=X&ved=2ahUKEwjK05GGva6AAxWZT2wGHTpSDIcQ_B16BAhIEAI#imgrc=YB47PD8s_MuZxM",
+            "location": "Belgaum, Karnataka, India",
+            "notableTasks": [
+                {
+                    "name": "Contracted Projects",
+                    "description": "Work as an independent contractor for various projects with Servicecart."
+                }
+            ]
+        },
+        {
+            "clientName": "NV Tech Business Solutions",
+            "date": "March 2022 - August 2022 (6 months) Pune, Maharashtra, India",
+            "summary": "Mobile Developer",
+            "logoUrl": "https://www.google.com/search?q=upwork&client=safari&rls=en&sxsrf=AB5stBgKD613Xq_RgSHPhpGAmE5oeunCYw:1690446795669&tbm=isch&source=iu&ictx=1&vet=1&fir=YB47PD8s_MuZxM%252CD3bdrUDy0YBCqM%252C%252Fm%252F02pzh5d&usg=AI4_-kT_VIzHVR3NiIPE67a2K6u97N14dw&sa=X&ved=2ahUKEwjK05GGva6AAxWZT2wGHTpSDIcQ_B16BAhIEAI#imgrc=YB47PD8s_MuZxM",
+            "location": "Pune, Maharashtra, India",
             "notableTasks": [
                 {
                     "name": "Mobile Development",
-                    "description": "Used flutter to develop mobile apps."
+                    "description": "Develop mobile apps using Flutter."
                 },
                 {
                     "name": "Backend",
