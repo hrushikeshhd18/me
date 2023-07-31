@@ -8,7 +8,9 @@ import 'package:hrushikesh_portfolio/theme.dart';
 import 'dart:html' as html;
 
 void showProjectDialog(BuildContext context, ProjectData projectData) {
-  showDialog(context: context, builder: (_) => _PortfolioItemDialog(projectData: projectData));
+  showDialog(
+      context: context,
+      builder: (_) => _PortfolioItemDialog(projectData: projectData));
 }
 
 class _PortfolioItemDialog extends StatelessWidget {
@@ -36,11 +38,17 @@ class _PortfolioItemDialog extends StatelessWidget {
           children: [
             Row(
               children: [
-                Text(
-                  projectData.name,
-                  style: Theme.of(context).textTheme.headline6,
-                ),
-                Spacer(),
+                Flexible(
+                    child: FittedBox(
+                      fit: BoxFit.scaleDown,
+                  child: Text(
+                    projectData.name,
+                    style: Theme.of(context).textTheme.headlineMedium,
+                    overflow: TextOverflow.fade,
+                    maxLines: 2,
+                  ),
+                )),
+                const Spacer(),
                 IconButton(
                   onPressed: !hasPreviewLink
                       ? null
@@ -56,7 +64,7 @@ class _PortfolioItemDialog extends StatelessWidget {
             SizedBox(height: 8),
             Text(
               projectData.fullDescription,
-              style: Theme.of(context).textTheme.caption?.copyWith(
+              style: Theme.of(context).textTheme.bodySmall?.copyWith(
                     height: 1.5,
                   ),
             ),
@@ -83,7 +91,7 @@ class _PortfolioItemDialog extends StatelessWidget {
               ),
               child: ClipRRect(
                 borderRadius: BorderRadius.circular(25),
-                child: Image.asset(
+                child: Image.network(
                   projectData.previewImage,
                   fit: BoxFit.cover,
                 ),
