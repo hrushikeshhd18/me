@@ -20,5 +20,29 @@
             "description": "Builds and Release automation",
             "techLogoPath": "assets/images/github_actions.png"
         }
+    ],
+    "languages": [
+        "Dart (Proficient)",
+        "Java (Proficient)",
+        "Kotlin (Familiar)",
+        "Python"
+    ],
+    "librariesFrameworks": [
+        "Flutter (Expert)",
+        "React Native (Familiar)"
+    ],
+    "technicalSkills": [
+        "Linux",
+        "Git",
+        "GitHub",
+        "JUnit",
+        "TensorFlow",
+        "AWS",
+        "Google Cloud",
+        "Android Studio",
+        "VS Code",
+        "IntelliJ IDEA",
+        "Project Management (Mira, Basecamp)",
+        "Team Communication (Slack)"
     ]
 }
